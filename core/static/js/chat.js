@@ -19,6 +19,7 @@ document.addEventListener("DOMContentLoaded", function () {
     console.log("Room ID:", roomId);
 
     if (roomId) {
+        console.log("roomId: ", roomId); // Verifica que el roomId sea correcto
         const socket = new WebSocket(`wss://${window.location.host}/ws/room/${roomId}/`);
 
         let player; // Variable global para el reproductor de YouTube
